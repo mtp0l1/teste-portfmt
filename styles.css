@@ -1021,3 +1021,22 @@ body.v2 .sp-hero .sp-loc { margin-top: 28px; }
 }
 /* Contato: formulário primeiro, conversa rápida embaixo */
 .v2 .ct-kick { order: 1; } .v2 .ct-h { order: 2; } .v2 .ct-form { order: 3; } .v2 .ct-call { order: 4; } .v2 .ct-also { order: 5; }
+
+/* ===== Ajustes 4 ===== */
+/* Menu: um bloco só (Cases, Sobre mim e Entrar em contato) no centro da página */
+.v2 .nv-right { position: static; }
+.v2 .nv-pill { align-items: center; }
+.v2 .nv-pill .nv-cta { position: relative; z-index: 1; top: auto; left: auto; height: 40px; margin-left: 4px; }
+.v2 .nv-pill .nv-cta:hover { padding: 0 22px; }
+@media (max-width: 760px) { .v2 .nv-row { justify-content: center; padding-left: 64px; } .v2 .nv-pill .nv-cta:hover { padding: 0 13px; } }
+@media (max-width: 380px) { .v2 .nv-row { padding-left: 12px; } }
+/* Carrossel sem mostrar o case vizinho */
+.v2 .cs-track { margin-inline: 0; padding-inline: 0; scroll-padding-inline: 0; grid-auto-columns: 100%; }
+.v2 .cs-card, .v2 .cs-card.is-on { opacity: 1; }
+/* Telas estreitas: menu no centro e idiomas no fim da página */
+@media (max-width: 760px) { .v2 .nv-row { padding-left: 12px; } }
+.v2 .ct-langs { display: none; }
+@media (max-width: 560px) {
+  .v2 .nv-langs { display: none; }
+  .v2 .ct-langs { display: flex; order: 6; margin-top: 20px; font-size: 13px; gap: 14px; }
+}
