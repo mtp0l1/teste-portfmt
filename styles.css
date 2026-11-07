@@ -1060,3 +1060,8 @@ body.v2 .sp-hero .sp-loc { margin-top: 28px; }
 @media (min-width: 900px) and (hover: hover) and (pointer: fine) {
   .v2 .col-h::before { background: transparent; }
 }
+/* Alça pequena também só no hover, arrastando ou com foco */
+@media (min-width: 900px) and (hover: hover) and (pointer: fine) {
+  .v2 .col-h i { opacity: 0; transition: opacity .2s ease, border-color .2s ease, height .2s ease, margin .2s ease; }
+  .v2 .col-h:hover i, .v2 .col-h.is-drag i, .v2 .col-h:focus-visible i { opacity: 1; }
+}
