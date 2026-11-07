@@ -671,6 +671,88 @@ body.sp { color: #000; font-family: var(--f-sp); letter-spacing: -.02em; }
 
 .sp-case .cx-strip.imgs.fx + .cx-strip.imgs.fx { margin-top: 10px; }
 
+/* Devices.css v0.2.0 (MIT License, Copyright (c) 2017 Yan Zhu, github.com/picturepan2/devices.css): só iPhone 14 Pro e MacBook Pro */
+.device,
+.device::before,
+.device::after,
+.device *,
+.device *::before,
+.device *::after {
+  box-sizing: border-box;
+  display: block;
+}
+
+.device {
+  position: relative;
+  transform: scale(1);
+  z-index: 1;
+}
+
+.device .device-frame {
+  z-index: 1;
+}
+
+.device .device-screen {
+  background-color: #000;
+  background-position: center center;
+  background-size: cover;
+  object-fit: cover;
+  position: relative;
+}
+.device { position: relative; transform: scale(1); z-index: 1; }
+.device-iphone-14-pro { height: 868px; width: 428px; }
+.device-iphone-14-pro .device-frame { background: #010101; border: 1px solid #1b1721; border-radius: 68px; box-shadow: inset 0 0 4px 2px #c0b7cd, inset 0 0 0 6px #342c3f; height: 868px; padding: 19px; width: 428px; }
+.device-iphone-14-pro .device-screen { border-radius: 49px; height: 830px; width: 390px; }
+.device-iphone-14-pro .device-stripe::after,
+.device-iphone-14-pro .device-stripe::before { border: solid rgba(1, 1, 1, .25); border-width: 0 7px; content: ""; height: 7px; left: 0; position: absolute; width: 100%; z-index: 9; }
+.device-iphone-14-pro .device-stripe::after { top: 85px; }
+.device-iphone-14-pro .device-stripe::before { bottom: 85px; }
+.device-iphone-14-pro .device-header { background: #010101; border-radius: 20px; height: 35px; left: 50%; margin-left: -60px; position: absolute; top: 29px; width: 120px; }
+.device-iphone-14-pro .device-sensors::after,
+.device-iphone-14-pro .device-sensors::before { content: ""; position: absolute; }
+.device-iphone-14-pro .device-sensors::after { background: #010101; border-radius: 17px; height: 33px; left: 50%; margin-left: -60px; top: 30px; width: 74px; }
+.device-iphone-14-pro .device-sensors::before { background: radial-gradient(farthest-corner at 20% 20%, #6074bf 0, transparent 40%), radial-gradient(farthest-corner at 80% 80%, #513785 0, #24555e 20%, transparent 50%); border-radius: 50%; box-shadow: 0 0 1px 1px rgba(255, 255, 255, .05); height: 9px; left: 50%; margin-left: 36px; top: 42px; width: 9px; }
+.device-iphone-14-pro .device-btns { background: #1b1721; border-radius: 2px; height: 32px; left: -2px; position: absolute; top: 115px; width: 3px; }
+.device-iphone-14-pro .device-btns::after,
+.device-iphone-14-pro .device-btns::before { background: #1b1721; border-radius: 2px; content: ""; height: 62px; left: 0; position: absolute; width: 3px; }
+.device-iphone-14-pro .device-btns::after { top: 60px; }
+.device-iphone-14-pro .device-btns::before { top: 140px; }
+.device-iphone-14-pro .device-power { background: #1b1721; border-radius: 2px; height: 100px; position: absolute; right: -2px; top: 200px; width: 3px; }
+.device-iphone-14-pro .device-home::after,
+.device-iphone-14-pro .device-home::before { border: solid rgba(1, 1, 1, .25); border-width: 6px 0; content: ""; height: 6px; position: absolute; width: 6px; z-index: 9; }
+.device-iphone-14-pro .device-home::after { right: 86px; top: 0; }
+.device-iphone-14-pro .device-home::before { bottom: 0; left: 86px; }
+.device-iphone-14-pro.device-silver .device-frame { border-color: #c8cacb; box-shadow: inset 0 0 4px 2px white, inset 0 0 0 6px #e2e3e4; }
+.device-iphone-14-pro.device-silver .device-btns { background: #c8cacb; }
+.device-iphone-14-pro.device-silver .device-btns::after,
+.device-iphone-14-pro.device-silver .device-btns::before { background: #c8cacb; }
+.device-iphone-14-pro.device-silver .device-power { background: #c8cacb; }
+.device-iphone-14-pro.device-black .device-frame { border-color: #5c5956; box-shadow: inset 0 0 4px 2px white, inset 0 0 0 6px #76726f; }
+.device-iphone-14-pro.device-black .device-btns { background: #5c5956; }
+.device-iphone-14-pro.device-black .device-btns::after,
+.device-iphone-14-pro.device-black .device-btns::before { background: #5c5956; }
+.device-iphone-14-pro.device-black .device-power { background: #5c5956; }
+.device-iphone-14-pro.device-gold .device-frame { border-color: #e7d19e; box-shadow: inset 0 0 4px 2px white, inset 0 0 0 6px #d2ab4c; }
+.device-iphone-14-pro.device-gold .device-btns { background: #e7d19e; }
+.device-iphone-14-pro.device-gold .device-btns::after,
+.device-iphone-14-pro.device-gold .device-btns::before { background: #e7d19e; }
+.device-iphone-14-pro.device-gold .device-power { background: #e7d19e; }
+.device-macbook-pro { height: 434px; width: 740px; }
+.device-macbook-pro .device-frame { background: #0d0d0d; border-radius: 20px; box-shadow: inset 0 0 0 2px #c8cacb; height: 418px; margin: 0 auto; padding: 9px 9px 23px 9px; position: relative; width: 618px; }
+.device-macbook-pro .device-frame::after { background: linear-gradient(to bottom, #272727, #0d0d0d); border-radius: 0 0 20px 20px; bottom: 2px; content: ""; height: 24px; left: 2px; position: absolute; width: 614px; }
+.device-macbook-pro .device-header { background: #0d0d0d; border-bottom-left-radius: 4px; border-bottom-right-radius: 4px; height: 12px; left: 50%; margin-left: -32px; position: absolute; top: 11px; width: 64px; z-index: 2; }
+.device-macbook-pro .device-header::after,
+.device-macbook-pro .device-header::before { content: ""; height: 4px; position: absolute; top: 0; width: 4px; }
+.device-macbook-pro .device-header::after { background: radial-gradient(circle at bottom left, transparent 0, transparent 75%, #0d0d0d 75%, #0d0d0d 100%); left: -4px; }
+.device-macbook-pro .device-header::before { background: radial-gradient(circle at bottom right, transparent 0, transparent 75%, #0d0d0d 75%, #0d0d0d 100%); right: -4px; }
+.device-macbook-pro .device-screen { border: 2px solid #121212; border-radius: 10px 10px 0 0; height: 375px; width: 600px; }
+.device-macbook-pro .device-power { background: radial-gradient(circle at center, #e2e3e4 85%, #c8cacb 100%); border: solid #a0a3a7; border-radius: 2px 2px 12px 12px; border-width: 1px 2px 0 2px; box-shadow: inset 0 -2px 8px 0 #6c7074; height: 24px; margin-top: -10px; position: relative; width: 740px; z-index: 9; }
+.device-macbook-pro .device-power::after { background: #e2e3e4; border-radius: 0 0 10px 10px; box-shadow: inset 0 0 4px 2px #babdbf; content: ""; height: 10px; left: 50%; margin-left: -60px; position: absolute; top: 0; width: 120px; }
+.device-macbook-pro .device-power::before { background: transparent; border-radius: 0 0 3px 3px; bottom: -2px; box-shadow: -300px 0 #272727, 300px 0 #272727; content: ""; height: 2px; left: 50%; margin-left: -20px; position: absolute; width: 40px; }
+.device-macbook-pro.device-spacegray .device-frame { box-shadow: inset 0 0 0 2px #767a7d; }
+.device-macbook-pro.device-spacegray .device-power { background: radial-gradient(circle at center, #83878a 85%, #767a7d 100%); border-color: #454749; box-shadow: inset 0 -2px 8px 0 #202121; }
+.device-macbook-pro.device-spacegray .device-power::after { background: #b7babc; box-shadow: inset 0 0 4px 2px #6a6d70; }
+
 /* ===== v2 (versão de teste): coluna central, menu em pílula, carrossel de cases, contato ===== */
 body.v2 { --v2-col: 560px; --v2-ease: cubic-bezier(.22, 1, .36, 1); --v2-ink: #0d111b; --v2-grey: #8d8d8d; --v2-soft: #6b6b6b; background: #fff; }
 body.v2 .sp-sky { display: none; }
@@ -727,13 +809,6 @@ body.v2 .sp-hero .sp-loc { justify-content: flex-start; margin: 24px 0 0; }
 .v2 .cs-vis { position: relative; aspect-ratio: 5 / 4; overflow: hidden; border-radius: 18px; background: #f4f4f4; isolation: isolate; container-type: inline-size; }
 .v2 .cs-inner { position: absolute; inset: 0; transition: transform .85s var(--v2-ease); }
 .v2 .cs-card:hover .cs-inner { transform: scale(1.04); }
-.v2 .dv-phone { position: absolute; top: 9%; left: 50%; width: 44%; aspect-ratio: 9 / 19.5; transform: translateX(-50%); box-sizing: border-box; padding: 1.7cqw; border-radius: 7.6cqw; background: #111; box-shadow: inset 0 0 0 .45cqw #2c2c2c, 0 4cqw 8cqw rgba(0, 0, 0, .16); }
-.v2 .dv-phone::after { content: ""; position: absolute; top: 3.3cqw; left: 50%; width: 31%; height: 4cqw; transform: translateX(-50%); border-radius: 4cqw; background: #000; }
-.v2 .dv-phone img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: top; border-radius: 6cqw; background: #fff; }
-.v2 .dv-desk { position: absolute; top: 12%; left: 7%; width: 86%; overflow: hidden; border-radius: 1.8cqw; background: #fff; box-shadow: 0 0 0 1px rgba(0, 0, 0, .06), 0 4cqw 8cqw rgba(0, 0, 0, .14); }
-.v2 .dv-bar { display: flex; align-items: center; gap: .9cqw; height: 4.4cqw; padding: 0 2cqw; background: #f6f6f6; border-bottom: 1px solid #ececec; }
-.v2 .dv-bar i { width: 1.5cqw; height: 1.5cqw; border-radius: 50%; background: #d9d9d9; }
-.v2 .dv-desk img { display: block; width: 100%; height: auto; }
 .v2 .cs-bar { display: none; }
 .v2 .cs-badge { position: absolute; right: 14px; bottom: 14px; z-index: 4; display: grid; place-items: center; width: 32px; height: 32px; border-radius: 50%; background: rgba(255, 255, 255, .92); color: var(--v2-ink); box-shadow: 0 2px 12px rgba(0, 0, 0, .14); }
 .v2 .cs-bt { margin: 0 0 6px; font-size: 18px; font-weight: 600; line-height: 1.3; letter-spacing: -.34px; color: #1e1e1e; }
@@ -894,3 +969,9 @@ body.v2 .sp-hero .sp-loc { justify-content: flex-start; margin: 24px 0 0; }
 .bp-tx { font: 500 13px "Inter", system-ui, sans-serif; fill: #111; }
 .bp-sm { font: 400 11.5px "Inter", system-ui, sans-serif; fill: #333; }
 .bp-lb { font: 400 11px "Inter", system-ui, sans-serif; fill: #666; }
+
+/* Mockups realistas (Devices.css): a tela cabe inteira no aparelho */
+.v2 .cs-inner .dv { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%) scale(var(--k, .42)); transform-origin: 50% 50%; filter: drop-shadow(0 24px 40px rgba(0, 0, 0, .18)); }
+.v2 .dv-phone .device-iphone-14-pro, .v2 .dv-phone .device-iphone-14-pro .device-frame { height: calc(var(--sh) + 38px); }
+.v2 .dv-phone .device-iphone-14-pro .device-screen { height: var(--sh); width: 390px; object-fit: cover; object-position: top center; background: var(--sbg); }
+.v2 .dv-desk .device-macbook-pro .device-screen { object-fit: contain; object-position: center; background: var(--sbg); }
