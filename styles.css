@@ -975,3 +975,40 @@ body.v2 .sp-hero .sp-loc { justify-content: flex-start; margin: 24px 0 0; }
 .v2 .dv-phone .device-iphone-14-pro, .v2 .dv-phone .device-iphone-14-pro .device-frame { height: calc(var(--sh) + 38px); }
 .v2 .dv-phone .device-iphone-14-pro .device-screen { height: var(--sh); width: 390px; object-fit: cover; object-position: top center; background: var(--sbg); }
 .v2 .dv-desk .device-macbook-pro .device-screen { object-fit: contain; object-position: center; background: var(--sbg); }
+
+/* ===== Ajustes 2: tudo na mesma coluna central ===== */
+/* Menu: idiomas no canto esquerdo, pílula centralizada */
+.v2 .nv-row { position: relative; width: 100%; box-sizing: border-box; padding: 0 28px; justify-content: center; }
+.v2 .nv-langs { position: absolute; left: 28px; top: 50%; transform: translateY(-50%); margin: 0; }
+@media (max-width: 760px) {
+  .v2 .nv-row { justify-content: flex-end; padding: 0 12px; }
+  .v2 .nv-langs { left: 12px; }
+}
+@media (max-width: 380px) { .v2 .nv-row { justify-content: center; } }
+
+/* Hero sem os botões; localização sobe */
+body.v2 .sp-hero .sp-links { display: none; }
+body.v2 .sp-hero .sp-loc { margin-top: 28px; }
+
+/* Carrossel vaza para as laterais, com o card ativo na coluna */
+.v2 .cs { --cw: min(var(--v2-col), calc(100vw - 48px)); }
+.v2 .cs-track { margin-inline: calc((100% - 100vw) / 2); padding-inline: calc((100vw - var(--cw)) / 2); scroll-padding-inline: calc((100vw - var(--cw)) / 2); grid-auto-columns: var(--cw); }
+.v2 .cs-card { opacity: .4; transition: opacity .5s var(--v2-ease); }
+.v2 .cs-card.is-on { opacity: 1; }
+@media (max-width: 520px) { .v2 .cs { --cw: calc(100vw - 32px); } .v2 .cs-track { column-gap: 10px; } }
+
+/* Contato na coluna central */
+.v2 .ct { padding: clamp(40px, 6vw, 72px) 0 clamp(56px, 8vw, 96px); }
+.v2 .ct-in { width: min(var(--v2-col), calc(100% - 48px)); max-width: none; grid-template-columns: minmax(0, 1fr); row-gap: 12px; }
+.v2 .ct-kick, .v2 .ct-h, .v2 .ct-call, .v2 .ct-form, .v2 .ct-also { grid-column: 1; grid-row: auto; }
+.v2 .ct-kick { margin: 0; font-size: 16px; font-weight: 600; line-height: 24px; color: var(--v2-grey); }
+.v2 .ct-h { margin: 4px 0 20px; font-size: clamp(40px, 9vw, 56px); }
+.v2 .ct-call { min-height: 0; padding: 28px; border-radius: 28px; }
+.v2 .ct-call-h { font-size: 20px; margin-bottom: 10px; }
+.v2 .ct-call-p { max-width: none; font-size: 18px; line-height: 1.4; }
+.v2 .ct-call-row { padding-top: 28px; }
+.v2 .ct-book, .v2 .ct-send { height: 50px; font-size: 17px; }
+.v2 .ct-book { padding: 0 18px; }
+.v2 .ct-form { padding: 28px; border-radius: 28px; gap: 20px; }
+.v2 .ct-also { margin: 12px 0 0; }
+@media (max-width: 520px) { .v2 .ct-in { width: calc(100% - 32px); } .v2 .ct-call, .v2 .ct-form { padding: 22px; } }

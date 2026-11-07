@@ -566,6 +566,7 @@
     function idx() { var w = cards[0].offsetWidth + parseFloat(getComputedStyle(track).columnGap || 0); return Math.round(track.scrollLeft / w); }
     function upd() {
       var i = idx(); if (num) num.textContent = i + 1;
+      cards.forEach(function (c, k) { c.classList.toggle("is-on", k === i); });
       btns[0].disabled = i <= 0; btns[1].disabled = i >= cards.length - 1;
     }
     btns.forEach(function (b) {
