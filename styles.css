@@ -1012,3 +1012,12 @@ body.v2 .sp-hero .sp-loc { margin-top: 28px; }
 .v2 .ct-form { padding: 28px; border-radius: 28px; gap: 20px; }
 .v2 .ct-also { margin: 12px 0 0; }
 @media (max-width: 520px) { .v2 .ct-in { width: calc(100% - 32px); } .v2 .ct-call, .v2 .ct-form { padding: 22px; } }
+
+/* ===== Ajustes 3 ===== */
+/* Pílula exatamente no centro; botão preto ao lado, fora do cálculo */
+@media (min-width: 761px) {
+  .v2 .nv-right { position: relative; }
+  .v2 .nv-cta { position: absolute; top: 0; left: calc(100% + 12px); }
+}
+/* Contato: formulário primeiro, conversa rápida embaixo */
+.v2 .ct-kick { order: 1; } .v2 .ct-h { order: 2; } .v2 .ct-form { order: 3; } .v2 .ct-call { order: 4; } .v2 .ct-also { order: 5; }
