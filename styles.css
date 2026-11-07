@@ -1056,3 +1056,7 @@ body.v2 .sp-hero .sp-loc { margin-top: 28px; }
   .v2 .col-h:hover i, .v2 .col-h.is-drag i, .v2 .col-h:focus-visible i { border: 2px solid #3b82f6; height: 40px; margin-top: -20px; }
   body.v2.is-resizing, body.v2.is-resizing * { cursor: col-resize !important; user-select: none; }
 }
+/* Linha da alça só aparece no hover, arrastando ou com foco */
+@media (min-width: 900px) and (hover: hover) and (pointer: fine) {
+  .v2 .col-h::before { background: transparent; }
+}
