@@ -1040,3 +1040,19 @@ body.v2 .sp-hero .sp-loc { margin-top: 28px; }
   .v2 .nv-langs { display: none; }
   .v2 .ct-langs { display: flex; order: 6; margin-top: 20px; font-size: 13px; gap: 14px; }
 }
+
+/* ===== Coluna ajustável (alças nas bordas, estilo rafaelcespedes.com) ===== */
+.v2 .col-h { display: none; }
+@media (min-width: 900px) and (hover: hover) and (pointer: fine) {
+  body.v2 { --z: 1; --col: 560px; }
+  body.v2 .sp-hero, body.v2 .cs, body.v2 .ct-in { width: 560px; zoom: var(--z); }
+  body.v2 .nv-pill { zoom: var(--z); }
+  .v2 .col-h { display: block; position: fixed; top: 0; bottom: 0; z-index: 55; width: 15px; margin-left: -7px; cursor: col-resize; touch-action: none; outline: none; }
+  .v2 .col-h--l { left: calc(50% - var(--col) / 2 - 20px); }
+  .v2 .col-h--r { left: calc(50% + var(--col) / 2 + 20px); }
+  .v2 .col-h::before { content: ""; position: absolute; top: 0; bottom: 0; left: 7px; width: 1px; background: rgba(0, 0, 0, .07); transition: background .2s ease; }
+  .v2 .col-h i { position: absolute; top: 50%; left: 5px; width: 5px; height: 20px; margin-top: -10px; box-sizing: border-box; border-radius: 3px; border: 1px solid rgba(0, 0, 0, .18); background: #fff; transition: border-color .2s ease, height .2s ease, margin .2s ease; }
+  .v2 .col-h:hover::before, .v2 .col-h.is-drag::before, .v2 .col-h:focus-visible::before { background: #3b82f6; }
+  .v2 .col-h:hover i, .v2 .col-h.is-drag i, .v2 .col-h:focus-visible i { border: 2px solid #3b82f6; height: 40px; margin-top: -20px; }
+  body.v2.is-resizing, body.v2.is-resizing * { cursor: col-resize !important; user-select: none; }
+}

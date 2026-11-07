@@ -597,6 +597,57 @@
   }
 })();
 
+(function () {
+  /* Coluna ajustável: arraste as alças para estreitar ou alargar; tudo escala junto */
+  var mq = matchMedia("(min-width: 900px) and (hover: hover) and (pointer: fine)");
+  var BASE = 560, KEY = "v2-col", body = document.body, col = BASE;
+  var labels = { pt: "Largura do conteúdo", en: "Content width", es: "Ancho del contenido" };
+  var lang = (document.documentElement.lang || "en").slice(0, 2);
+  try { var saved = parseFloat(localStorage.getItem(KEY)); if (saved) col = saved; } catch (e) {}
+  function max() { return Math.max(BASE, Math.min(1280, innerWidth - 120)); }
+  function min() { return 400; }
+  function apply(c, save) {
+    col = Math.round(Math.max(min(), Math.min(max(), c)));
+    body.style.setProperty("--col", col + "px");
+    body.style.setProperty("--z", (col / BASE).toFixed(4));
+    hs.forEach(function (h) { h.setAttribute("aria-valuenow", col); h.setAttribute("aria-valuemax", max()); });
+    if (save) { try { localStorage.setItem(KEY, col); } catch (e) {} }
+    dispatchEvent(new Event("v2-col"));
+  }
+  var hs = ["l", "r"].map(function (side) {
+    var h = document.createElement("div");
+    h.className = "col-h col-h--" + side;
+    h.setAttribute("role", "separator"); h.setAttribute("aria-orientation", "vertical");
+    h.setAttribute("aria-label", labels[lang] || labels.en); h.setAttribute("aria-valuemin", min());
+    h.tabIndex = 0; h.innerHTML = "<i></i>";
+    body.appendChild(h);
+    h.addEventListener("pointerdown", function (e) {
+      if (!mq.matches) return;
+      e.preventDefault(); h.setPointerCapture(e.pointerId);
+      h.classList.add("is-drag"); body.classList.add("is-resizing");
+      function move(ev) { apply(Math.abs(ev.clientX - innerWidth / 2) * 2 - 40); }
+      function up() {
+        h.classList.remove("is-drag"); body.classList.remove("is-resizing");
+        h.removeEventListener("pointermove", move); h.removeEventListener("pointerup", up); h.removeEventListener("pointercancel", up);
+        apply(col, true);
+      }
+      h.addEventListener("pointermove", move); h.addEventListener("pointerup", up); h.addEventListener("pointercancel", up);
+    });
+    h.addEventListener("dblclick", function () { apply(BASE, true); });
+    h.addEventListener("keydown", function (e) {
+      var step = e.shiftKey ? 80 : 20, d = 0;
+      if (e.key === "ArrowLeft") d = side === "l" ? step : -step;
+      if (e.key === "ArrowRight") d = side === "l" ? -step : step;
+      if (e.key === "Home") { apply(min(), true); e.preventDefault(); return; }
+      if (e.key === "End") { apply(max(), true); e.preventDefault(); return; }
+      if (d) { e.preventDefault(); apply(col + d, true); }
+    });
+    return h;
+  });
+  apply(col);
+  addEventListener("resize", function () { apply(col); });
+})();
+
 </script>
 <script src="/avatar-player.js" defer></script>
 <script src="/selection.js" defer></script>
