@@ -1269,3 +1269,20 @@ body.v2 .ct { padding-top: 40px; }
 .v2 .ph-b2 { left: -3px; top: 186px; height: 62px; }
 .v2 .ph-b3 { left: -3px; top: 262px; height: 62px; }
 .v2 .ph-pw { right: -3px; top: 210px; height: 90px; }
+
+/* ===== Ajustes 7: moldura fina, sem folgas, MacBook refeito ===== */
+.v2 .ph { width: 389px; }
+.v2 .ph-body { width: 389px; padding: 7px; border-radius: 40px; background: #050506; box-shadow: inset 0 0 0 1.5px #62646a, inset 0 0 0 3px #17171a, 0 0 0 1px #2c2d31; }
+.v2 .ph-scr { border-radius: 32px; }
+.v2 .ph-b { background: #4a4c52; }
+.v2 .ph-b1 { top: 110px; } .v2 .ph-b2 { top: 176px; } .v2 .ph-b3 { top: 252px; } .v2 .ph-pw { top: 200px; }
+
+.v2 .dv-desk { top: 44px; }
+.v2 .mbp { width: 880px; }
+.v2 .mbp-lid { padding: 11px 11px 14px; border-radius: 20px 20px 3px 3px; background: #060607; box-shadow: inset 0 0 0 1.5px #5a5c62, inset 0 0 0 3px #131315, 0 0 0 1px #2b2c30; }
+.v2 .mbp-scr { width: 858px; height: var(--msh); padding-top: 24px; border-radius: 6px 6px 2px 2px; }
+.v2 .mbp-scr img { display: block; width: 100%; height: 100%; object-fit: contain; object-position: top center; }
+.v2 .mbp-notch { top: 11px; width: 104px; height: 24px; margin-left: -52px; border-radius: 0 0 12px 12px; }
+.v2 .mbp-notch::after { top: 8px; }
+.v2 .mbp-base { display: block; width: 100%; height: 16px; margin: -1px 0 0; border-radius: 0; background: none; box-shadow: none; }
+.v2 .mbp-base::before { display: none; }
