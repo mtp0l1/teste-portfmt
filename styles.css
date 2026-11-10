@@ -1290,3 +1290,7 @@ body.v2 .ct { padding-top: 40px; }
 /* Cantos pequenos: a barra de status dos desenhos (sinal e bateria rentes à borda) não é cortada */
 .v2 .ph-body { border-radius: 19px; }
 .v2 .ph-scr { border-radius: 12px; }
+
+/* Vivo: respiro lateral na tela; a faixa roxa continua nas laterais do cabeçalho */
+.v2 .dv-ins .ph-scr { background: linear-gradient(#660099, #660099) top / 100% calc(64px * (375 - 2 * 9) / 375) no-repeat, #fff; }
+.v2 .dv-ins .ph-scr img { width: calc(100% - 2 * var(--ins)); margin: 0 auto; object-fit: contain; object-position: top center; }
