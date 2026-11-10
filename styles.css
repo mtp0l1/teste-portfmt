@@ -1305,3 +1305,8 @@ body.v2 .ct { padding-top: 40px; }
 .v2 .mon-led { position: absolute; right: 22px; bottom: 8px; width: 5px; height: 5px; border-radius: 50%; background: #3a3b40; box-shadow: inset 0 1px 1px rgba(0, 0, 0, .5); }
 .v2 .mon-neck { position: relative; width: 120px; height: 74px; margin: -1px auto 0; background: linear-gradient(90deg, #08080a 0%, #2b2c31 22%, #3a3b41 50%, #2b2c31 78%, #08080a 100%); clip-path: polygon(14% 0, 86% 0, 100% 100%, 0 100%); }
 .v2 .mon-foot { position: relative; width: 300px; height: 13px; margin: -1px auto 0; border-radius: 3px 3px 12px 12px / 3px 3px 9px 9px; background: linear-gradient(180deg, #4a4b51 0, #26272b 40%, #0c0c0e 100%); box-shadow: 0 1px 0 rgba(255, 255, 255, .12) inset, 0 14px 18px -8px rgba(0, 0, 0, .45); }
+
+/* Meli Studio: parágrafos de contexto na página standalone */
+.cx-body > p.cx-ctx { margin-bottom: 0; }
+.cx-body > p.cx-ctx + p.cx-ctx { margin-top: 18px; }
+.cx-body > p.cx-ctx + .cx-label { margin-top: 48px; }
