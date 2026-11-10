@@ -1286,3 +1286,7 @@ body.v2 .ct { padding-top: 40px; }
 .v2 .mbp-notch::after { top: 8px; }
 .v2 .mbp-base { display: block; width: 100%; height: 16px; margin: -1px 0 0; border-radius: 0; background: none; box-shadow: none; }
 .v2 .mbp-base::before { display: none; }
+
+/* Cantos pequenos: a barra de status dos desenhos (sinal e bateria rentes à borda) não é cortada */
+.v2 .ph-body { border-radius: 19px; }
+.v2 .ph-scr { border-radius: 12px; }
