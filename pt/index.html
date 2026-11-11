@@ -538,9 +538,10 @@
     document.querySelectorAll(".cs-vis").forEach(function (v) {
       var w = v.querySelector(".dv"), d = w && w.querySelector(".ph, .mon");
       if (!d) return;
-      var small = v.clientWidth < 420, ph = w.classList.contains("dv-phone");
-      var share = ph ? (small ? .66 : .58) : (small ? .94 : .92);
-      w.style.setProperty("--k", (v.clientWidth * share / d.offsetWidth).toFixed(4));
+      var ph = w.classList.contains("dv-phone");
+      var kw = v.clientWidth * (ph ? .5 : .8) / d.offsetWidth;
+      var kh = v.clientHeight * (ph ? .78 : .72) / d.offsetHeight;
+      w.style.setProperty("--k", Math.min(kw, kh).toFixed(4));
     });
   }
   fitDevices(); addEventListener("resize", fitDevices);
