@@ -54,7 +54,8 @@
 <a href="/es/" hreflang="es" lang="es" aria-label="Leer en español" title="Español">ES</a>
 <a href="/pt/" hreflang="pt-BR" lang="pt-BR" aria-label="Ler em português" title="Português">PT</a></nav>
 <div class="nv-right">
-<nav class="nv-pill" aria-label="Menu"><span class="nv-ind" aria-hidden="true"></span><a href="#projetos" class="nv-a is-on" data-nv="cases">Cases</a><a href="#sobre" class="nv-a" data-nv="sobre" aria-haspopup="dialog" aria-controls="sobre">About me</a><a class="nv-cta" href="#contato">Get in touch</a></nav>
+<nav class="nv-pill" aria-label="Menu"><span class="nv-ind" aria-hidden="true"></span><a href="#projetos" class="nv-a is-on" data-nv="cases">Cases</a><a href="#sobre" class="nv-a" data-nv="sobre" aria-haspopup="dialog" aria-controls="sobre">About me</a><a href="#contato" class="nv-a" data-nv="contato">Contact</a></nav>
+<a class="nv-resume" href="https://drive.google.com/drive/folders/1__nW9JYIgGA6tznI3ik4Tl-NHg4fLqsm?usp=sharing" target="_blank" rel="noopener noreferrer" aria-label="Download resume (opens in a new tab)">Resume</a>
 </div>
 </div>
 </header>
@@ -547,6 +548,16 @@
       var b = document.querySelector(".sp-about-btn"); if (b) b.click();
     });
     cases.addEventListener("click", function () { place(cases); });
+    var contact = pill.querySelector('[data-nv="contato"]'), ctSec = document.getElementById("contato");
+    contact.addEventListener("click", function () { place(contact); });
+    if (ctSec && "IntersectionObserver" in window) {
+      new IntersectionObserver(function (es) {
+        es.forEach(function (e) {
+          if (e.isIntersecting) place(contact);
+          else if (pill.querySelector(".nv-a.is-on") === contact) place(cases);
+        });
+      }, { threshold: .35 }).observe(ctSec);
+    }
     var md = document.getElementById("sobre");
     if (md && "MutationObserver" in window) {
       new MutationObserver(function () { if (md.hidden) place(cases); else place(about); }).observe(md, { attributes: true, attributeFilter: ["hidden"] });

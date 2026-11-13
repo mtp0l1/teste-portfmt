@@ -1303,3 +1303,13 @@ body.v2 .ct { padding-top: 40px; }
 /* Tags na legenda do card (mobile e touch, sem hover) */
 .v2 .cs-cap .cs-tags { display: flex; flex-wrap: wrap; gap: 6px; margin: 12px 0 0; }
 .v2 .cs-cap .cs-tags span { padding: 4px 10px; border-radius: 100px; background: rgba(0, 0, 0, .05); border: 1px solid rgba(0, 0, 0, .08); font-size: 12px; font-weight: 600; line-height: 1.2; color: #111; }
+
+/* ===== Botão de currículo (preto, ao lado da pílula do menu) ===== */
+.v2 .nv-resume { box-sizing: border-box; display: inline-flex; align-items: center; justify-content: center; height: 44px; padding: 0 22px; border-radius: 100px; background: var(--v2-ink); color: #fff; font-size: 14px; font-weight: 600; line-height: 1; text-decoration: none; white-space: nowrap; transition: transform .3s var(--v2-ease), opacity .25s ease, visibility .25s; }
+.v2 .nv-resume:hover { transform: scale(1.04); }
+.v2 .nv-resume:active { transform: scale(.98); }
+body:has(.wk-sheet.on) .nv-resume { opacity: 0; visibility: hidden; pointer-events: none; }
+@media (max-width: 520px) { .v2 .nv-resume { padding: 0 14px; font-size: 13px; } .v2 .nv-resume:hover { transform: none; } }
+@media (max-width: 350px) { .v2 .nv-resume { padding: 0 11px; font-size: 12px; } .v2 .nv-a { padding: 9px 8px; font-size: 12px; } }
+@media (prefers-reduced-motion: reduce) { .v2 .nv-resume { transition: none; } }
+@media (min-width: 900px) and (hover: hover) and (pointer: fine) { body.v2 .nv-resume { zoom: var(--z); } }
