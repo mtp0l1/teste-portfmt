@@ -1333,9 +1333,9 @@ body:has(.wk-sheet.on) .nv-resume { opacity: 0; visibility: hidden; pointer-even
 
 .lv{font-family:"Inter",system-ui,-apple-system,"Segoe UI",sans-serif;background:#FAF8F3;color:#1F1F1F;overflow:hidden}
 .lv *{box-sizing:border-box;margin:0}
-.lv .pr{position:absolute;right:90px;top:112px;max-width:1010px;background:#1F1F1F;color:#fff;border-radius:60px 60px 18px 60px;padding:38px 56px;font-size:56px;line-height:1.18;font-weight:600;letter-spacing:-.01em}
+.lv .pr{position:absolute;right:90px;top:96px;max-width:1010px;background:#1F1F1F;color:#fff;border-radius:60px 60px 18px 60px;padding:32px 54px;font-size:54px;line-height:1.18;font-weight:600;letter-spacing:-.01em}
 .lv .w{display:inline-block}
-.lv .ar{position:absolute;left:90px;top:392px;height:100px;display:flex;align-items:center;gap:28px}
+.lv .ar{position:absolute;left:90px;top:318px;height:100px;display:flex;align-items:center;gap:28px}
 .lv .av{width:100px;height:100px;border-radius:50%;background:#FFE600;display:grid;place-items:center;flex:none}
 .lv .av svg{width:52px;height:52px}
 .lv .st{position:relative;height:100px;display:flex;align-items:center;font-size:48px;font-weight:600;color:#5b5750}
@@ -1343,11 +1343,11 @@ body:has(.wk-sheet.on) .nv-resume { opacity: 0; visibility: hidden; pointer-even
 .lv .wr i{width:12px;height:12px;border-radius:50%;background:#1F1F1F;display:block;margin-top:14px}
 .lv .rd{display:inline-flex;align-items:center;gap:16px;background:#00A650;color:#fff;border-radius:999px;padding:0 42px 0 30px;height:84px;font-size:46px;font-weight:700}
 .lv .rd svg{width:44px;height:44px}
-.lv .cd{position:absolute;left:90px;right:90px;top:530px;height:400px;background:#fff;border:3px solid #E9E4D9;border-radius:44px;padding:40px 52px;box-shadow:0 30px 70px -30px rgba(60,40,0,.28)}
-.lv .tb{height:46px;width:62%;border-radius:23px;background:#1F1F1F}
-.lv .ln{height:30px;border-radius:15px;background:#DAD5C9;margin-top:22px}
-.lv .l1{width:100%;margin-top:34px}.lv .l2{width:92%}.lv .l3{width:58%}
-.lv .cs{position:absolute;left:52px;bottom:34px;display:flex;gap:18px}
+.lv .cd{position:absolute;left:90px;right:90px;top:500px;height:450px;background:#fff;border:3px solid #E9E4D9;border-radius:44px;padding:36px 52px;box-shadow:0 30px 70px -30px rgba(60,40,0,.28)}
+.lv .tb{height:42px;width:62%;border-radius:21px;background:#1F1F1F}
+.lv .ln{height:28px;border-radius:14px;background:#DAD5C9;margin-top:20px}
+.lv .l1{width:100%;margin-top:30px}.lv .l2{width:92%}.lv .l3{width:58%}
+.lv .cs{position:absolute;left:52px;bottom:36px;display:flex;gap:18px}
 .lv .ch{display:inline-flex;align-items:center;gap:12px;height:72px;padding:0 30px 0 20px;border-radius:999px;background:#EEF8F1;color:#0b6b36;font-size:38px;font-weight:600;white-space:nowrap}
 .lv .ch svg{width:34px;height:34px}
 .lv .t{display:none}
