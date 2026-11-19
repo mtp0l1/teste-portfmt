@@ -1323,3 +1323,78 @@ body:has(.wk-sheet.on) .nv-resume { opacity: 0; visibility: hidden; pointer-even
 @media (max-width: 350px) { .v2 .nv-resume, .v2 .nv-resume:hover { padding: 0 11px; font-size: 12px; } .v2 .nv-a { padding: 9px 8px; font-size: 12px; } }
 @media (prefers-reduced-motion: reduce) { .v2 .nv-resume, .v2 .nv-resume-icon, .v2 .nv-resume-doc__sheet, .v2 .nv-resume-doc__front { transition: none; } }
 @media (min-width: 900px) and (hover: hover) and (pointer: fine) { body.v2 .nv-resume { zoom: var(--z); } }
+
+/* thumb animada do Squad de Comus */
+.v2 .dv3.has-lv { container-type: size; }
+.v2 .dv3 .lvw { position: relative; display: block; flex: none; width: min(100cqw, calc(100cqh * 1479 / 1427)); aspect-ratio: 1479 / 1427; }
+.v2 .dv3 .lvw img { position: absolute; inset: 0; width: 100%; height: 100%; max-width: none; max-height: none; }
+.lvw .lv { display: none; position: absolute; left: 0; top: 0; width: 1563px; height: 1000px; transform-origin: 0 0; transform: scale(var(--k, 0)) matrix3d(0.703146,-0.144883,0,0.000013186,0.076272,0.700941,0,0.000016909,0,0,1,0,17.1784,245.6485,0,1); -webkit-mask: url(/live-mask.png) 0 0 / 100% 100% no-repeat; mask: url(/live-mask.png) 0 0 / 100% 100% no-repeat; pointer-events: none; }
+.lvw.on .lv { display: block; }
+
+.lv{font-family:"Inter",system-ui,-apple-system,"Segoe UI",sans-serif;background:#FAF8F3;color:#1F1F1F;overflow:hidden}
+.lv *{box-sizing:border-box;margin:0}
+.lv .pr{position:absolute;right:90px;top:112px;max-width:1010px;background:#1F1F1F;color:#fff;border-radius:60px 60px 18px 60px;padding:38px 56px;font-size:56px;line-height:1.18;font-weight:600;letter-spacing:-.01em}
+.lv .w{display:inline-block}
+.lv .ar{position:absolute;left:90px;top:392px;height:100px;display:flex;align-items:center;gap:28px}
+.lv .av{width:100px;height:100px;border-radius:50%;background:#FFE600;display:grid;place-items:center;flex:none}
+.lv .av svg{width:52px;height:52px}
+.lv .st{position:relative;height:100px;display:flex;align-items:center;font-size:48px;font-weight:600;color:#5b5750}
+.lv .wr{display:none;align-items:center;gap:8px}
+.lv .wr i{width:12px;height:12px;border-radius:50%;background:#1F1F1F;display:block;margin-top:14px}
+.lv .rd{display:inline-flex;align-items:center;gap:16px;background:#00A650;color:#fff;border-radius:999px;padding:0 42px 0 30px;height:84px;font-size:46px;font-weight:700}
+.lv .rd svg{width:44px;height:44px}
+.lv .cd{position:absolute;left:90px;right:90px;top:530px;height:400px;background:#fff;border:3px solid #E9E4D9;border-radius:44px;padding:40px 52px;box-shadow:0 30px 70px -30px rgba(60,40,0,.28)}
+.lv .tb{height:46px;width:62%;border-radius:23px;background:#1F1F1F}
+.lv .ln{height:30px;border-radius:15px;background:#DAD5C9;margin-top:22px}
+.lv .l1{width:100%;margin-top:34px}.lv .l2{width:92%}.lv .l3{width:58%}
+.lv .cs{position:absolute;left:52px;bottom:34px;display:flex;gap:18px}
+.lv .ch{display:inline-flex;align-items:center;gap:12px;height:72px;padding:0 30px 0 20px;border-radius:999px;background:#EEF8F1;color:#0b6b36;font-size:38px;font-weight:600;white-space:nowrap}
+.lv .ch svg{width:34px;height:34px}
+.lv .t{display:none}
+:root:lang(pt) .lv .t-pt,:root:lang(en) .lv .t-en,:root:lang(es) .lv .t-es{display:inline}
+:root:lang(pt) .lv .pr.t-pt,:root:lang(en) .lv .pr.t-en,:root:lang(es) .lv .pr.t-es{display:block}
+.lv.static .t-pt{display:inline}.lv.static .pr.t-pt{display:block}
+.lv.static .t-en,.lv.static .t-es{display:none!important}
+.lv .wr-w{display:none!important}.lv.go .wr-w{display:inline-flex!important}:root:lang(pt) .lv .wr-w.t-pt,:root:lang(pt) .lv .rd-w.t-pt{display:inline-flex}:root:lang(en) .lv .rd-w.t-en{display:inline-flex}:root:lang(es) .lv .rd-w.t-es{display:inline-flex}:root:lang(en) .lv.go .wr-w.t-en,:root:lang(es) .lv.go .wr-w.t-es{display:inline-flex!important}.lv.go .wr-w.t-pt,.lv.go .wr-w.t-en,.lv.go .wr-w.t-es{display:none!important}:root:lang(pt) .lv.go .wr-w.t-pt,:root:lang(en) .lv.go .wr-w.t-en,:root:lang(es) .lv.go .wr-w.t-es{display:inline-flex!important}:root:lang(pt) .lv .ch.t-pt,:root:lang(en) .lv .ch.t-en,:root:lang(es) .lv .ch.t-es,.lv.static .ch.t-pt{display:inline-flex}.lv .st{min-width:700px}.lv .wr-w,.lv .rd-w{position:absolute;left:0}.lv.static .rd-w.t-pt{display:inline-flex}.lv.static .wr-w{display:none!important}.lv.go .w0{animation:w0 12.0s ease-out infinite both}
+.lv.go .w1{animation:w1 12.0s ease-out infinite both}
+.lv.go .w2{animation:w2 12.0s ease-out infinite both}
+.lv.go .w3{animation:w3 12.0s ease-out infinite both}
+.lv.go .w4{animation:w4 12.0s ease-out infinite both}
+.lv.go .w5{animation:w5 12.0s ease-out infinite both}
+.lv.go .w6{animation:w6 12.0s ease-out infinite both}
+.lv.go .w7{animation:w7 12.0s ease-out infinite both}
+.lv.go .w8{animation:w8 12.0s ease-out infinite both}
+.lv.go .av{animation:av 12.0s cubic-bezier(.3,1.6,.5,1) infinite both}
+.lv.go .rd-w{animation:rd 12.0s cubic-bezier(.3,1.6,.5,1) infinite both}
+.lv.go .wr-w{animation:wr 12.0s linear infinite both}
+.lv.go .wr-w .wr{display:inline-flex}
+.lv.go .wr i{animation:dot 1s ease-in-out infinite}.lv.go .wr i:nth-child(2){animation-delay:.15s}.lv.go .wr i:nth-child(3){animation-delay:.3s}
+.lv.go .cd{animation:cardin 12.0s ease-out infinite both}
+.lv.go .tb{animation:tb 12.0s ease-in-out infinite both}
+.lv.go .l1{animation:l1 12.0s ease-in-out infinite both}.lv.go .l2{animation:l2 12.0s ease-in-out infinite both}.lv.go .l3{animation:l3 12.0s ease-in-out infinite both}
+.lv.go .ch0{animation:ch0 12.0s cubic-bezier(.3,1.6,.5,1) infinite both}.lv.go .ch1{animation:ch1 12.0s cubic-bezier(.3,1.6,.5,1) infinite both}.lv.go .ch2{animation:ch2 12.0s cubic-bezier(.3,1.6,.5,1) infinite both}
+.lv.go .in{animation:outro 12.0s linear infinite both}
+.lv.go.paused *{animation-play-state:paused!important}
+@keyframes w0{0%,3.33%{opacity:0;transform:translateY(22px)}5.83%,95.00%{opacity:1;transform:none}100%{opacity:0;transform:translateY(22px)}}
+@keyframes w1{0%,5.00%{opacity:0;transform:translateY(22px)}7.50%,95.00%{opacity:1;transform:none}100%{opacity:0;transform:translateY(22px)}}
+@keyframes w2{0%,6.67%{opacity:0;transform:translateY(22px)}9.17%,95.00%{opacity:1;transform:none}100%{opacity:0;transform:translateY(22px)}}
+@keyframes w3{0%,8.33%{opacity:0;transform:translateY(22px)}10.83%,95.00%{opacity:1;transform:none}100%{opacity:0;transform:translateY(22px)}}
+@keyframes w4{0%,10.00%{opacity:0;transform:translateY(22px)}12.50%,95.00%{opacity:1;transform:none}100%{opacity:0;transform:translateY(22px)}}
+@keyframes w5{0%,11.67%{opacity:0;transform:translateY(22px)}14.17%,95.00%{opacity:1;transform:none}100%{opacity:0;transform:translateY(22px)}}
+@keyframes w6{0%,13.33%{opacity:0;transform:translateY(22px)}15.83%,95.00%{opacity:1;transform:none}100%{opacity:0;transform:translateY(22px)}}
+@keyframes w7{0%,15.00%{opacity:0;transform:translateY(22px)}17.50%,95.00%{opacity:1;transform:none}100%{opacity:0;transform:translateY(22px)}}
+@keyframes w8{0%,16.67%{opacity:0;transform:translateY(22px)}19.17%,95.00%{opacity:1;transform:none}100%{opacity:0;transform:translateY(22px)}}
+@keyframes av{0%,25.00%{opacity:0;transform:scale(.4)}28.33%,95.00%{opacity:1;transform:scale(1)}100%{opacity:0;transform:scale(.4)}}
+@keyframes wr{0%,25.00%{opacity:0}27.50%,65.83%{opacity:1}100%{opacity:0}}
+@keyframes rd{0%,66.67%{opacity:0;transform:scale(.7)}70.00%,95.00%{opacity:1;transform:scale(1)}100%{opacity:0;transform:scale(.7)}}
+@keyframes cardin{0%,25.00%{opacity:0;transform:translateY(30px)}29.17%,95.00%{opacity:1;transform:none}100%{opacity:0;transform:translateY(30px)}}
+@keyframes tb{0%,29.17%{clip-path:inset(0 100% 0 0 round 22px)}35.00%,95.00%{clip-path:inset(0 0 0 0 round 22px)}100%{clip-path:inset(0 100% 0 0 round 22px)}}
+@keyframes l1{0%,35.83%{clip-path:inset(0 100% 0 0 round 15px)}40.83%,95.00%{clip-path:inset(0 0 0 0 round 15px)}100%{clip-path:inset(0 100% 0 0 round 15px)}}
+@keyframes l2{0%,40.83%{clip-path:inset(0 100% 0 0 round 15px)}45.83%,95.00%{clip-path:inset(0 0 0 0 round 15px)}100%{clip-path:inset(0 100% 0 0 round 15px)}}
+@keyframes l3{0%,45.83%{clip-path:inset(0 100% 0 0 round 15px)}50.00%,95.00%{clip-path:inset(0 0 0 0 round 15px)}100%{clip-path:inset(0 100% 0 0 round 15px)}}
+@keyframes ch0{0%,53.33%{opacity:0;transform:scale(.6)}56.67%,95.00%{opacity:1;transform:scale(1)}100%{opacity:0;transform:scale(.6)}}
+@keyframes ch1{0%,57.92%{opacity:0;transform:scale(.6)}61.25%,95.00%{opacity:1;transform:scale(1)}100%{opacity:0;transform:scale(.6)}}
+@keyframes ch2{0%,62.50%{opacity:0;transform:scale(.6)}65.83%,95.00%{opacity:1;transform:scale(1)}100%{opacity:0;transform:scale(.6)}}
+@keyframes fade{0%,0.00%{opacity:1}0.08%,94.17%{opacity:1}100%{opacity:1}}
+@keyframes outro{0%,92%{opacity:1}98%,100%{opacity:0}}
+@keyframes dot{0%,100%{transform:translateY(0);opacity:.35}50%{transform:translateY(-10px);opacity:1}}
