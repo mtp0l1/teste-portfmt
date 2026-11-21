@@ -93,9 +93,15 @@
 </a>
 <a class="wk cs-card" href="#pausar-loja" data-case="pausar-loja" aria-label="Pausing a store in the backoffice">
 <div class="cs-vis"><div class="cs-inner"><div class="dv3 dv3-desk"><img src="/mockups/pausar-loja.webp" alt="Pause store panel with the duration and reason options over the store settings screen" width="1479" height="1427" loading="lazy" decoding="async"></div></div>
-<div class="cs-bar" aria-hidden="true"><p class="cs-bt">Pausing a store in the backoffice <span>Mercado Libre</span></p><p class="cs-bd">A controlled way to stop incoming orders when a store can’t keep up.</p><p class="cs-tags"><span>Product Design</span><span>Content Design</span></p></div>
+<div class="cs-bar" aria-hidden="true"><p class="cs-bt">Pausing a store in the backoffice <span>Mercado Libre</span></p><p class="cs-bd">A controlled way to stop incoming orders when a store can’t keep up.</p><p class="cs-tags"><span>Product Design</span><span>Lean UX</span></p></div>
 <span class="cs-badge" aria-hidden="true"><svg viewBox="0 0 13 13" width="12" height="12" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 9.5l6-6M4.5 3.5h5v5"/></svg></span></div>
-<div class="cs-cap"><p class="cs-bt">Pausing a store in the backoffice <span>Mercado Libre</span></p><p class="cs-bd">A controlled way to stop incoming orders when a store can’t keep up.</p><p class="cs-tags"><span>Product Design</span><span>Content Design</span></p></div>
+<div class="cs-cap"><p class="cs-bt">Pausing a store in the backoffice <span>Mercado Libre</span></p><p class="cs-bd">A controlled way to stop incoming orders when a store can’t keep up.</p><p class="cs-tags"><span>Product Design</span><span>Lean UX</span></p></div>
+</a>
+<a class="wk cs-card" href="#widget-compatibilidade" data-case="widget-compatibilidade" aria-label="Part compatibility widget">
+<div class="cs-vis"><div class="cs-inner"><div class="dv3 dv3-phone"><img src="/widget-final.png" alt="Product page on mobile, in Spanish, with the green header Compatible with your vehicle, the Chevrolet Tracker, the list of positions and the notes" width="250" height="514" loading="lazy" decoding="async"></div></div>
+<div class="cs-bar" aria-hidden="true"><p class="cs-bt">Part compatibility widget <span>Mercado Libre</span></p><p class="cs-bd">A widget that helps people buy the right part, prototyped in code with AI and released in alpha and beta.</p><p class="cs-tags"><span>Product Design</span><span>Design Engineering</span></p></div>
+<span class="cs-badge" aria-hidden="true"><svg viewBox="0 0 13 13" width="12" height="12" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 9.5l6-6M4.5 3.5h5v5"/></svg></span></div>
+<div class="cs-cap"><p class="cs-bt">Part compatibility widget <span>Mercado Libre</span></p><p class="cs-bd">A widget that helps people buy the right part, prototyped in code with AI and released in alpha and beta.</p><p class="cs-tags"><span>Product Design</span><span>Design Engineering</span></p></div>
 </a>
 <a class="wk cs-card" href="#assistente-virtual-whatsapp" data-case="assistente-virtual-whatsapp" aria-label="Virtual assistant on WhatsApp">
 <div class="cs-vis"><div class="cs-inner"><div class="dv3 dv3-phone"><img src="/mockups/assistente-virtual-whatsapp.webp" alt="WhatsApp chat, in Portuguese: the customer writes “my card isn’t going through” and the assistant confirms the intent with three numbered options before asking for any data" width="1263" height="1609" loading="lazy" decoding="async"></div></div>
@@ -222,7 +228,7 @@
 <img class="cx-logo-img" src="/meli-logo.png" alt="Mercado Libre" width="256" height="196">
 <h2 class="cx-title">Pausing a store in the backoffice</h2>
 <p class="cx-sub">A controlled way to stop incoming orders when a store can’t keep up.</p>
-<p class="cx-role"><b>Product and Content Designer</b><span>Mercado Libre</span></p>
+<p class="cx-role"><b>Product Designer</b><span>Mercado Libre</span></p>
 </div>
 <div class="cx-bleed">
 <div class="cx-strip imgs fx" style="--n:2;--cols:0.661fr 2.595fr">
@@ -241,11 +247,44 @@
 </div>
 <div class="fx-blk">
 <h3 class="cx-label">What I did</h3>
-<ul class="fx-list"><li>Designed the pause and resume flow in the backoffice, restricted to people with a specific permission.</li><li>Wrote the copy to make clear this is an exception tool, not an everyday one.</li><li>Documented the use cases, the errors and the automatic resume.</li></ul>
+<ul class="fx-list"><li>Designed the pause and resume flow in the backoffice, restricted to people with a specific permission.</li><li>Designed the information hierarchy, impact alerts and operational error prevention so the pause is used only in exceptions.</li><li>Documented the use cases, the errors and the automatic resume.</li><li>Worked in short Lean UX cycles from the MVP. <b>Alpha:</b> controlled validation with a small group of team leaders, to test permissions, reason logging and the 15 use cases.</li><li><b>Beta:</b> progressive rollout to a restricted group of high-volume stores, during real demand peaks, before the general release.</li></ul>
 </div>
 <div class="fx-blk">
 <h3 class="cx-label">Results</h3>
-<ul class="fx-list"><li><b>1 flow</b> to pause and resume a store, with a reason and a record of who did it.</li><li>Handoff with <b>15 use cases</b>, including date and time errors, failures and expired sessions.</li></ul>
+<ul class="fx-list"><li><b>1 flow</b> to pause and resume a store, with a reason and a record of who did it.</li><li>Handoff with <b>15 use cases</b>, including date and time errors, failures and expired sessions.</li><li><b>Alpha with team leaders and beta in high-volume stores</b> before the general release.</li><li>Post-launch metrics tracked with the PM and data: fewer queue stalls at peaks, rate of automatic resume without errors and frequency of use, to confirm the tool stayed limited to exceptions and to iterate on what broke in production.</li></ul>
+</div>
+</div>
+</section></template>
+<template id="tpl-widget-compatibilidade"><section class="sp-case" aria-label="Part compatibility widget">
+<div class="cx-hero">
+<img class="cx-logo-img" src="/meli-logo.png" alt="Mercado Libre" width="256" height="196">
+<h2 class="cx-title">Part compatibility widget</h2>
+<p class="cx-sub">A widget that helps people buy the right part, prototyped in code with AI and released in alpha and beta.</p>
+<p class="cx-role"><b>Product Designer</b><span>Mercado Libre</span></p>
+</div>
+<div class="cx-bleed">
+<div class="cx-strip imgs fx" style="--n:3;--cols:0.828fr 0.475fr 0.628fr">
+<img style="aspect-ratio:420/507" src="/widget-antes.png" alt="Widget before, in Spanish: the We don’t know if it’s compatible state and the Compatible state, with notes and position in grey text below" loading="lazy">
+<img style="aspect-ratio:250/514" src="/widget-final.png" alt="Product page on mobile, in Spanish, with the green header Compatible with your vehicle, the Chevrolet Tracker, the list of positions and the notes" loading="lazy">
+<img style="aspect-ratio:318/506" src="/widget-nao-sabemos.png" alt="Proposal, in Portuguese: the Compatible with your vehicle state, with where the part fits, and the We don’t know if it’s compatible state, with the reason and the See compatible products link" loading="lazy">
+</div>
+</div>
+<div class="cx-body fx">
+<div class="fx-blk">
+<h3 class="cx-label">Context</h3>
+<p class="fx-ctx">In the Auto Parts funnel, high-ticket items had a lot of drop-off at the moment of the purchase decision.</p><p class="fx-ctx">Research showed why: fear of buying an incompatible part, which made people leave the app to search on Google.</p><p class="fx-ctx">In searches, 69% didn’t show the widget, 24% of people didn’t remember seeing it and 41% found inconsistent information. Incompatibility complaints were high, 9% of them about position.</p>
+</div>
+<div class="fx-blk">
+<h3 class="cx-label">What changed</h3>
+<ul class="fx-list"><li>Compatible: green header, the vehicle and the positions and notes that apply to it, to buy knowing it fits.</li><li>Incompatible or no information: the widget leads to “See compatible products” when there is supply and encourages asking the seller when there isn’t.</li><li>Empty: invites the person to add their vehicle, to increase widget usage.</li><li>The same structure in the app and on desktop.</li></ul>
+</div>
+<div class="fx-blk">
+<h3 class="cx-label">What I did</h3>
+<ul class="fx-list"><li>Instead of redesigning the whole page, I isolated the friction at the point of the purchase decision, crossing the funnel with the research.</li><li>Defined the goal and content of each state: empty, compatible, incompatible and no information.</li><li>Prototyped the working widget in code with AI (Claude Code and Codex), connected to the design system tokens, and validated it in a simulated environment before the engineering sprint.</li><li>Ran a design critique with two proposals and used the feedback to refine the final version.</li><li>Organized the handoff with structure, behaviors, specs, accessibility and a happy-path prototype.</li><li>Followed the rollout in internal alpha and controlled beta, with a feature flag by traffic percentage.</li></ul>
+</div>
+<div class="fx-blk">
+<h3 class="cx-label">Results</h3>
+<ul class="fx-list"><li><b>4 states</b> with a defined goal and content, from empty to no information.</li><li>Handoff for <b>6 countries</b>, in the app and on desktop.</li><li>Progressive rollout until it became the <b>official standard of the app in Latin America</b>.</li><li>Metrics tracked after launch: lower drop-off at the purchase decision, fewer returns for incompatibility and GPV protection.</li></ul>
 </div>
 </div>
 </section></template>
